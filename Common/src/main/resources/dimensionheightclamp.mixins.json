@@ -1,14 +1,17 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.example.examplemod.mixin",
+  "package": "corgitaco.dimensionheightclamp.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "MixinDimensionType",
+    "access.DimensionTypeAccess"
   ],
   "client": [
-    "ExampleForgeMixin"
+    "client.MixinClientMain"
   ],
   "server": [
+    "server.MixinServerMain"
   ],
   "injectors": {
     "defaultRequire": 1
